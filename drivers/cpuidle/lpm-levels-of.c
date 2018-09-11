@@ -632,7 +632,7 @@ static int calculate_residency(struct power_params *base_pwr,
 	residency /= (int32_t)(base_pwr->ss_power  - next_pwr->ss_power);
 
 	if (residency < 0) {
-		pr_err("Residency < 0 for LPM\n");
+		pr_info("Residency < 0 for LPM\n");
 		return next_pwr->time_overhead_us;
 	}
 
