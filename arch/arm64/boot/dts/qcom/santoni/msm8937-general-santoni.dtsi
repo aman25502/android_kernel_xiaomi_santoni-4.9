@@ -33,6 +33,7 @@
 	qcom,chg-led-sw-controls;
 	qcom,chg-led-support;
 	dpdm-supply = <&usb_otg>;
+	/delete-property/ qcom,autoadjust-vfloat;
 };
 
 &usb_otg {
