@@ -639,7 +639,7 @@ static void wake_up_idle_cpus(void *v)
 	/* Use READ_ONCE to get the isolated mask outside cpu_add_remove_lock */
 	cpus &= ~READ_ONCE(*cpumask_bits(cpu_isolated_mask));
 	if (cpus)
-		arch_send_wakeup_ipi_mask(to_cpumask(&cpus));}
+		arch_send_wakeup_ipi_mask(to_cpumask(&cpus));
 }
 
 /*
