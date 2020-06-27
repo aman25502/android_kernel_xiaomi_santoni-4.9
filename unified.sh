@@ -48,7 +48,7 @@ fi
 mkdir -p ${KERNELDIR}/aroma
 mkdir -p ${KERNELDIR}/files
 
-export KERNELNAME="Testkernelqakmalsir"
+export KERNELNAME="Testkernelqbranchakmalsir"
 export BUILD_CROSS_COMPILE="$HOME/TC/aarch64-linux-gnu-8.x/bin/aarch64-linux-gnu-"
 export SRCDIR="${KERNELDIR}";
 export OUTDIR="${KERNELDIR}/out";
